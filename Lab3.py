@@ -5,6 +5,11 @@ SORT_DESCENDING = 1
 
 
 def bubble_sort(arr, sorting_order):
+    '''
+    sort_ascending = sorted(arr)
+    sort_descending = sorted(arr,reverse = True)
+    
+'''
 
     # Copy input list to results list
     arr_result = arr.copy()
@@ -41,6 +46,11 @@ def bubble_sort(arr, sorting_order):
 def main():
     # Driver code to test above
     arr = [64, 34, 25, 12, 22, 11, 90]
+    '''
+    f = open("C:\Local_Git_Repository\lab3\Test_Lab3.py","r")
+    inp = f.read()
+    
+'''
 
     # Sort in ascending order
     result = bubble_sort(arr, SORT_ASCENDING)
@@ -48,7 +58,7 @@ def main():
     print(result)
 
     # Sort in descending order
-    print("Sorted array in ascending order: ")
+    print("Sorted array in descending order: ")
     result = bubble_sort(arr, SORT_DESCENDING)
     print(result)
 
